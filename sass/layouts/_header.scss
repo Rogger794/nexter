@@ -13,6 +13,14 @@
   grid-row-gap: 1.5rem;
   justify-content: center;
 
+  @include respond(phone-medium){ // width < 800?
+    grid-column: 1 / -1;
+  }
+
+  @include respond(phone){ // width < 600?
+    padding: 5rem;
+  }
+
   &__logo{
     height: 3rem;
     justify-self: center;
